@@ -1,8 +1,17 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 function Tab3() {
   return (
-    <div>Tab3</div>
+    <motion.div
+            key="box"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.7 }}
+            className="box"
+          >
+            Mount/Unmount Animation
+          </motion.div>
   )
 }
 
