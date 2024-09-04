@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-function Navbar({activeTab,setActiveTab}) {
+function Navbar({ activeTab, setActiveTab }) {
     const tabs = [
         { id: 1, title: "Basic Animation" },
         { id: 2, title: "Hover Effect" },
         { id: 3, title: "Mount/Unmount Animation" },
-        { id: 4, title: "Complex Animation" },]
-
+        { id: 4, title: "Complex Animation" },
+        { id: 5, title: "Animate Presence" },
     
+    
+    ]
+
+
 
     return (
         <NavbarStyled>
             <nav>
                 {tabs.map((tab) => (
-                    <div onClick={()=>setActiveTab(tab.id)} key={tab.id} className={tab.id===activeTab?"active":""}>
+                    <div onClick={() => setActiveTab(tab.id)} key={tab.id} className={tab.id === activeTab ? "active" : ""}>
                         <h1>{tab.title}</h1>
                     </div>
                 ))}

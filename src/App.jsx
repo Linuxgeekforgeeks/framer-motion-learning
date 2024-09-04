@@ -5,6 +5,7 @@ import Tab2 from './pages/Tab2'
 import Tab3 from './pages/Tab3'
 import Tab4 from './pages/Tab4'
 import styled from 'styled-components'
+import Tab5 from './pages/Tab5'
 
 function App() {
   const [activeTab, setActiveTab] = useState(1)
@@ -17,6 +18,7 @@ function App() {
     {activeTab===2 && <Tab2/>}
     {activeTab===3 && <Tab3/>}
     {activeTab===4 && <Tab4/>}
+    {activeTab===5 && <Tab5/>}
     </AppStyled>
     </>
   )
